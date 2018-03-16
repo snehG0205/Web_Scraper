@@ -1,0 +1,38 @@
+P - If you click the save button, your code will be saved, and you get an URL you can share with others.
+P - 
+Save
+Cancel
+
+P - By clicking the "Save" button you agree to our terms and conditions.
+P - Report Error
+P - All code in shared files are supplied by users, and belongs to the poster.
+P - All shared files are made public. No license is enforced.
+P - Any code can be removed without warning (if it is deemed offensive, damaging or for any other reason).
+P - w3schools.com are not responsible or liable for any loss or damage of any kind during the usage of provided code.
+P - The code has too many characters.
+P - File has been saved to: 
+P - If you have a Google account, you can save this code to your Google Drive.
+P - Google will ask you to confirm Google Drive access.
+P - Save file as:
+
+Save file
+
+P - 
+P - If you have saved a file to Google Drive, you can open it here:
+P - Open file
+P - Privacy policy and 
+  Copyright 1999-2018
+P - This is a paragraph.
+P - This is a paragraph.
+P - This is a paragraph.
+P - Your E-mail:
+
+
+P - 
+Page address:
+
+
+P - 
+Description:
+
+
