@@ -10,6 +10,7 @@ from headings import getHeaders
 from paragraphs import getParagraphs
 from images import getImages
 from images import storeImages
+from tables import getTables
 
 # GLOBAL DECLARATIONS
 target_URL = input("Enter target URL - ")
@@ -65,7 +66,8 @@ elif (ch==5):
 	writeToFile(par)
 
 elif (ch==6):
-	pass
+	tables = getTables(target_URL)
+	print (tables)
 
 
 		
