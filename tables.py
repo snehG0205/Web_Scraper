@@ -13,38 +13,29 @@ def getTables(url):
 	output = []
 	table = soup.find('table')
 	rows = table.findAll('tr')
-	text_data = []
 	k = 0
 	for tr in rows:
 		cols = tr.findAll('th')
 		for th in cols:
 			text = th.text
 			# print (text)
-			text_data.append(text)
+			output.append(text)
 			k = k+1
 		cols = tr.findAll('td')
 		for td in cols:
 			# text = ''.join(td)
 			text = td.text
 			# print (text)
-			text_data.append(text)
-
-	output.append(text_data)
-
-
-	writer = csv.writer(open("res.csv","w+"))
-	i=0
-	j=0
-	for j in range(0,len(output)):
-		while i<k:
-			writer.writerow(output[j])
-		writer.writerow('\n')
-
-	
-		
+			output.append(text)
 
 	# print(k)
-	
+	file = open("table.txt", "w+")
+	temp = 1
+	for item in output:
+		file.write("%s| \t" % item)
+		if temp%k == 0:
+			file.write("\n")
+		temp = temp+1
 	return output
 	
    
