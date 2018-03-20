@@ -28,7 +28,13 @@ def getImages(url):
 	# print (output)
 	return output
 
+	
+
 def storeImages(url, img_list):
+	'''
+	function stores all images retrieved in
+	the /images subdirectory
+	'''
 	o = urlparse(url)
 	# print (o)
 	# print (o.netloc)
@@ -39,3 +45,5 @@ def storeImages(url, img_list):
 		img_arr = img_name.split("/")
 		# print(img_arr[-1])
 		urllib.request.urlretrieve("http://"+new_url, "images/"+img_arr[-1])
+
+

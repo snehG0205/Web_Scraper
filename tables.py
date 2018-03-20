@@ -5,7 +5,10 @@ import requests
 import csv
 
 def getTables(url):
-
+	'''
+	function retrieves all the data enclosed in the
+	<th> and the <td> tags
+	'''
 	print("Tables - ")
 	response = requests.get(url)
 	html = response.text
@@ -29,6 +32,10 @@ def getTables(url):
 			output.append(text)
 
 	# print(k)
+
+	'''
+	code below stores the tables data in a text file
+	'''
 	file = open("table.txt", "w+")
 	temp = 1
 	for item in output:
